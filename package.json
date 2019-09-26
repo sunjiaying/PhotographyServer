@@ -1,0 +1,17 @@
+{
+  "name": "photographyserver",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "start": "node ./main.js",
+    "build-win": "nexe main.js -t windows-x64-6.11.2 --verbose -o ./PhotographyServer.exe",
+    "build-mac": "nexe main.js -t mac-x64-8.4.0 --verbose -o ./PhotographyServer"
+  },
+  "author": "sunjoin@qq.com",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "image-thumbnail": "^1.0.4"
+  }
+}
